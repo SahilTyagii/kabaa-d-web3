@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.custom-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Change to column layout on small screens */
+  align-items: center; /* Center items vertically */
+}
+
+.intro {
+  width: 100%; /* Occupy full width */
+  max-width: 800px; /* Set maximum width */
+  padding: 3% 5%;
+}
+
+.custom-h2 {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 900;
+  font-size: 4rem; /* Large font size */
+  font-family: "DM Sans", sans-serif;
+  color: #03471F;
+}
+
+.custom-p {
+  font-size: 1.2em; /* Medium font size */
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0 0 40px 0;
+}
+
+.custom-button {
+  background-color: #03471F;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+
+.custom-button:hover {
+  background-color: #153e26;
+}
+
+.custom-img {
+  width: 80%; /* Change image width for better responsiveness */
+  max-width: 600px; /* Set maximum image width */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+  .custom-main {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .custom-h2 {
+      font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+
+  .custom-p {
+      font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .custom-img {
+      width: 100%; /* Occupy full width */
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .custom-main {
+      flex-direction: row; /* Layout in row on larger screens */
+      justify-content: space-around; /* Space evenly on larger screens */
+      align-items: flex-start; /* Align items to the top */
+  }
+
+  .intro {
+      width: 50%; /* Occupy half width */
+      padding: 20px; /* Add padding */
+      text-align: left; /* Align text to left */
+  }
+
+  .custom-img {
+      width: 50%; /* Occupy half width */
+      max-width: none; /* Remove maximum width for image */
+      margin-top: 0; /* Remove top margin */
+  }
+}
